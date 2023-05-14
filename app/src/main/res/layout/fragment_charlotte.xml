@@ -11,31 +11,36 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|top"
+            android:paddingBottom="10dp"
             android:text="Charlotte Street"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="412dp"
+            android:layout_width="349dp"
+            android:layout_height="187dp"
             android:layout_gravity="center_horizontal"
             android:adjustViewBounds="true"
-            android:rotation="90"
+            android:paddingBottom="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/charlotte2" />
+            android:src="@drawable/charlotte" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
             android:text="Charlotte street is  aprivate oasis a stone's throw from the city. In enviable Fannie Bay, the area is top notch, walking distance to the Sailing Club and Parap Markets with great schools in the area." />
+
     </LinearLayout>
 
 </FrameLayout>

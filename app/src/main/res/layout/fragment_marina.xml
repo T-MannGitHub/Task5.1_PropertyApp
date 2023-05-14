@@ -10,22 +10,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|top"
+            android:paddingBottom="20dp"
             android:text="Marina Blvd"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="304dp"
+            android:layout_width="346dp"
+            android:layout_height="178dp"
             android:layout_gravity="center_horizontal"
             android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:paddingBottom="20dp"
             android:scaleType="centerCrop"
             android:src="@drawable/marina2" />
 
@@ -33,7 +37,10 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
             android:text="Marina Blvd is a fabuloous place to live. The pool is sensational, the view is unbeatable, and the interior is modern and fresh." />
+
     </LinearLayout>
 
 </FrameLayout>
