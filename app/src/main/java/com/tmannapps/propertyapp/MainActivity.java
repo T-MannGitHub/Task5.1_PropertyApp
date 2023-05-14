@@ -6,11 +6,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.Toast;
 
+import java.security.cert.CertPathBuilderSpi;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements PropertyAdapter.OnRowClickListener {
     RecyclerView propertyRecyclerView;
     PropertyAdapter propertyAdapter;
     List<Property> propertyList = new ArrayList<>();
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         propertyRecyclerView = findViewById(R.id.propertyRecyclerView);
-        propertyAdapter = new PropertyAdapter(propertyList, MainActivity.this);
+        propertyAdapter = new PropertyAdapter(propertyList, MainActivity.this, this);
         propertyRecyclerView.setAdapter(propertyAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         propertyRecyclerView.setLayoutManager(layoutManager);
@@ -41,4 +43,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onItemClick(int position) {
+        switch (position) {
+            case 0:
+                Toast.makeText(this, "You clicked on Marina Blv", Toast.LENGTH_SHORT).show();
+                break;
+            case 1:
+                Toast.makeText(this, "You clicked on Charlotte St", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + position);
+        }
+
+    }
 }
