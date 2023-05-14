@@ -45,11 +45,14 @@ public class MainActivity extends AppCompatActivity implements PropertyAdapter.O
 
     @Override
     public void onItemClick(int position) {
+        //todo: set the onclick listener to go to a fragment per case instead of a Toast
         switch (position) {
             case 0:
+
                 Toast.makeText(this, "You clicked on Marina Blv", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
+
                 Toast.makeText(this, "You clicked on Charlotte St", Toast.LENGTH_SHORT).show();
                 break;
             default:
