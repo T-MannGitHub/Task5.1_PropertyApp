@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="fill_horizontal|fill_vertical"
         android:background="#FFFFFF"
         android:orientation="vertical">
 
@@ -40,6 +41,12 @@
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
             android:text="Marina Blvd is a fabuloous place to live. The pool is sensational, the view is unbeatable, and the interior is modern and fresh." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/marina" />
 
     </LinearLayout>
 

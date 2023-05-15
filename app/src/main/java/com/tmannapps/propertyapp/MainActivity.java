@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity implements PropertyAdapter.O
         switch (position) {
             case 0:
                 fragment = new MarinaFragment();
-                Toast.makeText(this, "You clicked on Marina Blv", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "You clicked on Marina Blv", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
                 fragment = new CharlotteFragment();
                 fragment.isVisible();
-                Toast.makeText(this, "You clicked on Charlotte St", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "You clicked on Charlotte St", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + position);

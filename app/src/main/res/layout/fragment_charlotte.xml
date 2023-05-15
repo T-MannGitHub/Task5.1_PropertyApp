@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_anchorGravity="fill_horizontal|fill_vertical"
     tools:context=".CharlotteFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -40,6 +42,12 @@
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
             android:text="Charlotte street is  aprivate oasis a stone's throw from the city. In enviable Fannie Bay, the area is top notch, walking distance to the Sailing Club and Parap Markets with great schools in the area." />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/charlotte2" />
 
     </LinearLayout>
 
